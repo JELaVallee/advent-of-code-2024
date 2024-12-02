@@ -42,9 +42,6 @@ namespace :aoc24 do
                 coordinates2 << num2
             end
 
-            coordinates1.sort!
-            coordinates2.sort!
-
             coordinates1.each_with_index do |num1, index|
               count = coordinates2.count(num1)
               similarity_score += num1 * count
